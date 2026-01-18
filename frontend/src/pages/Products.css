@@ -1,0 +1,49 @@
+.products-page {
+  padding: 2rem 1rem;
+}
+
+.products-page h1 {
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 400px;
+}
+
+.category-select {
+  width: auto;
+  min-width: 180px;
+}
+
+.results-count {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: var(--gray-500);
+}
+
+@media (max-width: 640px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .search-box {
+    max-width: none;
+  }
+
+  .category-select {
+    width: 100%;
+  }
+}

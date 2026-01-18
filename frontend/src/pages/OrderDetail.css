@@ -1,0 +1,173 @@
+.order-detail {
+  padding: 2rem 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--gray-600);
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.not-found {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.not-found h2 {
+  margin-bottom: 1rem;
+  color: var(--gray-600);
+}
+
+.order-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.order-detail-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.order-date {
+  color: var(--gray-500);
+}
+
+.order-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.order-items-section {
+  padding: 1.5rem;
+}
+
+.order-items-section h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.order-item-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--gray-100);
+  flex-shrink: 0;
+}
+
+.order-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-item-image .no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--gray-400);
+}
+
+.order-item-info {
+  flex: 1;
+}
+
+.order-item-name {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.order-item-name:hover {
+  color: var(--primary);
+}
+
+.order-item-price {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.order-item-total {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.order-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-summary-card,
+.shipping-card {
+  padding: 1.5rem;
+}
+
+.order-summary-card h2,
+.shipping-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: var(--gray-600);
+}
+
+.summary-row.total {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-200);
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.shipping-address {
+  color: var(--gray-600);
+  white-space: pre-line;
+}
+
+@media (max-width: 900px) {
+  .order-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .order-detail-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
