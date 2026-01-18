@@ -1,0 +1,146 @@
+.product-detail {
+  padding: 2rem 1rem;
+}
+
+.product-not-found {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.product-not-found h2 {
+  margin-bottom: 1rem;
+  color: var(--gray-600);
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.product-detail-image {
+  aspect-ratio: 1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--gray-100);
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail-image .no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-400);
+}
+
+.product-detail-info {
+  padding: 1rem 0;
+}
+
+.product-detail-category {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.product-detail-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-detail-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.product-detail-description {
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.stock-info {
+  margin-bottom: 1.5rem;
+}
+
+.stock-info .in-stock {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.stock-info .out-of-stock {
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.add-to-cart-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-selector button {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+.quantity-value {
+  width: 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.message {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.message.success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .product-detail-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .add-to-cart-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quantity-selector {
+    justify-content: center;
+  }
+}
